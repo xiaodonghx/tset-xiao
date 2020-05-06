@@ -1,0 +1,67 @@
+C:\Users\dxiao\github and git>cd new project
+
+C:\Users\dxiao\github and git\new project>git congig --global user.name 'xiaodonghx'
+git: 'congig' is not a git command. See 'git --help'.
+
+The most similar command is
+        config
+
+C:\Users\dxiao\github and git\new project>git config --global user.name 'xiaodonghx'
+
+C:\Users\dxiao\github and git\new project>git config --global user.email'xiaodonghx@126.com'
+error: invalid key: user.email'xiaodonghx@126.com'
+
+C:\Users\dxiao\github and git\new project>git config --global user.email 'xiaodonghx@126.com'
+
+C:\Users\dxiao\github and git\new project>git config -l
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+core.editor="C:\\Program Files\\Notepad++\\notepad++.exe" -multiInst -notabbar -nosession -noPlugin
+credential.helper=manager
+user.name='xiaodonghx'
+user.email='xiaodonghx@126.com'
+
+C:\Users\dxiao\github and git\new project>git init
+Initialized empty Git repository in C:/Users/dxiao/github and git/new project/.git/
+
+C:\Users\dxiao\github and git\new project>git remote add origin https://github.com/xiaodonghx/tset-xiao.git
+
+C:\Users\dxiao\github and git\new project>
+C:\Users\dxiao\github and git\new project>git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        20200506'.txt
+        xiao test 20200506/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\dxiao\github and git\new project>git add *
+C:\Users\dxiao\github and git\new project>git commit -m 'first_commit'
+[master (root-commit) 6f612d2] 'first_commit'
+ 2 files changed, 1 insertion(+)
+ create mode 100644 20200506'.txt
+ create mode 100644 xiao test 20200506/111111.txt
+
+
+C:\Users\dxiao\github and git\new project>git push -u origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (5/5), 319 bytes | 159.00 KiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/xiaodonghx/tset-xiao.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
